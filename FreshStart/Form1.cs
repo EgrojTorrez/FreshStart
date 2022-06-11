@@ -22,5 +22,24 @@ namespace FreshStart
         {
             this.Close();
         }
+
+        private void AbrirFormHijo(object formhijo)
+        {
+            if (this.contenedorPrincipal.Controls.Count > 0)
+            {
+                this.contenedorPrincipal.Controls.RemoveAt(0);
+            }
+            Form hijo = formhijo as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.contenedorPrincipal.Controls.Add(hijo);
+            this.contenedorPrincipal.Tag = hijo;
+            hijo.Show();
+        }
+
+        private void botonUsers_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormInicioSesion());
+        }
     }
 }
