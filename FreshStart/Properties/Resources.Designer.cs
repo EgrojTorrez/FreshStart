@@ -73,6 +73,16 @@ namespace FreshStart.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap angle_circle_right_free_icon_font {
+            get {
+                object obj = ResourceManager.GetObject("angle-circle-right-free-icon-font", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book_alt_free_icon_font {
             get {
                 object obj = ResourceManager.GetObject("book-alt-free-icon-font", resourceCulture);
@@ -116,6 +126,66 @@ namespace FreshStart.Properties {
         internal static System.Drawing.Bitmap sign_out_free_icon_font {
             get {
                 object obj = ResourceManager.GetObject("sign-out-free-icon-font", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorialPython4 {
+            get {
+                object obj = ResourceManager.GetObject("TutorialPython4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorialPython5 {
+            get {
+                object obj = ResourceManager.GetObject("TutorialPython5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorialPython6 {
+            get {
+                object obj = ResourceManager.GetObject("TutorialPython6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorilPython1 {
+            get {
+                object obj = ResourceManager.GetObject("TutorilPython1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorilPython2 {
+            get {
+                object obj = ResourceManager.GetObject("TutorilPython2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TutorilPython3 {
+            get {
+                object obj = ResourceManager.GetObject("TutorilPython3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

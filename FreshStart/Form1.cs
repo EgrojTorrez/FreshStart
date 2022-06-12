@@ -41,5 +41,10 @@ namespace FreshStart
         {
             AbrirFormHijo(new FormInicioSesion());
         }
+
+        private void botonLecciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormTutorial());
+        }
     }
 }

@@ -96,6 +96,7 @@
             this.botonLecciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonLecciones.TabIndex = 4;
             this.botonLecciones.TabStop = false;
+            this.botonLecciones.Click += new System.EventHandler(this.botonLecciones_Click);
             // 
             // botonUsers
             // 
