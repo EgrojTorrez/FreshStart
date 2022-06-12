@@ -164,6 +164,7 @@
             this.contenedorPrincipal.Name = "contenedorPrincipal";
             this.contenedorPrincipal.Size = new System.Drawing.Size(929, 546);
             this.contenedorPrincipal.TabIndex = 2;
+            this.contenedorPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedorPrincipal_Paint);
             // 
             // formInicio
             // 

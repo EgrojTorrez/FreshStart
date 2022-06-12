@@ -1,5 +1,6 @@
 namespace FreshStart
 {
+    using System.Data.SQLite;
     public partial class formInicio : Form
     {
         public formInicio()
@@ -16,11 +17,17 @@ namespace FreshStart
             botonSignOut.Top = (Height - (botonSignOut.Height + 50));
             contenedorPrincipal.Width = Width - barraLateral.Width;
             contenedorPrincipal.Height = Height - barraSuperior.Height;
+
         }
 
         private void botonCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void contenedorPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
