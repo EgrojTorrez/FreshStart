@@ -19,15 +19,44 @@ namespace FreshStart
 
         private void FormInicioSesion_Load(object sender, EventArgs e)
         {
-            paneInicioSesion.Width = Width / 2;
-            paneInicioSesion.Height = Height;
-            panelRegistro.Left = Width / 2;
-            panelRegistro.Width = Width/2;
-            panelRegistro.Height = Height;
             
+            panelRegistro.Width = Width;
+            panelRegistro.Height = Height;
+            panelFormInscribirse.Width = Width;
+            panelFormInscribirse.Height = Height;
+                
         }
 
-        
+        private void buttonIncribirse_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormHijo(new FormRegistro());
+            this.panelRegistro.SendToBack();
+            this.buttonCerrar.BringToFront();
+        }
+
+        private void AbrirFormHijo(object formhijo)
+        {
+            if (this.panelFormInscribirse.Controls.Count > 0)
+            {
+                this.panelFormInscribirse.Controls.RemoveAt(0);
+            }
+            Form hijo = formhijo as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.panelFormInscribirse.Controls.Add(hijo);
+            this.panelFormInscribirse.Tag = hijo;
+            hijo.Show();
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            this.panelFormInscribirse.Controls.RemoveAt(0);
+            this.panelFormInscribirse.SendToBack();
+            this.buttonCerrar.SendToBack();
+            this.panelRegistro.BringToFront();
+            
+        }
     }
 
 }
