@@ -46,5 +46,16 @@ namespace FreshStart
         {
             AbrirFormHijo(new FormTutorial());
         }
+
+        private void botonSignOut_Click(object sender, EventArgs e)
+        {
+
+            using (FormCerrar cerrar = new FormCerrar())
+            {
+                cerrar.modificarOpcion(1);
+                cerrar.ShowDialog();
+
+            }
+        }
     }
 }
