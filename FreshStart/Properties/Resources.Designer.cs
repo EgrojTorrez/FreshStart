@@ -113,6 +113,26 @@ namespace FreshStart.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrarPopUp {
+            get {
+                object obj = ResourceManager.GetObject("cerrarPopUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkPopUp {
+            get {
+                object obj = ResourceManager.GetObject("checkPopUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross_circle_free_icon_font {
             get {
                 object obj = ResourceManager.GetObject("cross-circle-free-icon-font", resourceCulture);

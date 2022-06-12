@@ -49,7 +49,6 @@ namespace FreshStart
 
         private void botonSignOut_Click(object sender, EventArgs e)
         {
-
             using (FormCerrar cerrar = new FormCerrar())
             {
                 cerrar.modificarOpcion(1);

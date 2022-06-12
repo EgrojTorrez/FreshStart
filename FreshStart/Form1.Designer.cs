@@ -72,6 +72,7 @@
             this.botonSignOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonSignOut.TabIndex = 6;
             this.botonSignOut.TabStop = false;
+            this.botonSignOut.Click += new System.EventHandler(this.botonSignOut_Click);
             // 
             // botonCalificaciones
             // 
