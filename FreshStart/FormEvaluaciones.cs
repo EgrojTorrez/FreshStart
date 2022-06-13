@@ -42,10 +42,11 @@ namespace FreshStart
         private void datosXML()
         {
             int i = 0;
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resources\evaluaciones.xml");
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(FreshStart.Properties.Resources.evaluaciones);
+            xmlDoc.Load(@"..\..\..\Resources\evaluaciones.xml"); 
 
-            foreach (XmlNode xmlNode in xmlDoc.DocumentElement.ChildNodes[0].ChildNodes)
+            foreach (XmlNode xmlNode in xmlDoc.DocumentElement.ChildNodes[2].ChildNodes)
             {
 
                 foreach (XmlNode xmlNodeItem in xmlNode.ChildNodes)
@@ -82,9 +83,7 @@ namespace FreshStart
             if (int.Parse(res) == int.Parse(respuestacorrecta[pregunta]))
             {
                 calificacion++;
-                label1.Text = calificacion.ToString();
-                label2.Text = res;
-                label3.Text = respuestacorrecta[pregunta];
+                
             }
         }
 

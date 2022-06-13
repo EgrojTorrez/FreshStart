@@ -47,7 +47,7 @@ namespace FreshStart
         {
             if (opcion == 1)
             {
-
+                this.DialogResult = DialogResult.OK;
             }
             else if (opcion == 2)
             {

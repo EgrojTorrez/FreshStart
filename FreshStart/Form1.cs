@@ -57,8 +57,12 @@ namespace FreshStart
             using (FormCerrar cerrar = new FormCerrar())
             {
                 cerrar.modificarOpcion(opc);
-                cerrar.ShowDialog();
-
+                cerrar.ShowDialog(this);
+                if (cerrar.DialogResult == DialogResult.OK)
+                {
+                    AbrirFormHijo(new FormUsuario());
+                }
+                
             }
         }
 
