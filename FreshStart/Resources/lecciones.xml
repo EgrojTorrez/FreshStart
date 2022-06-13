@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lecciones>
+  <etapa id="1">
+    <leccion id = "1">
+      <titulo>Variables</titulo>
+      <codigo>caja1   =   "Hola pin pon" 
+caja2   =   18  
+caja3   =   18.1
+caja4   =   True</codigo>
+      <explicacion>Una variable es un espacio en un sistema de almacenaje que recibe un identificador y contiene información conocida o desconocida. En python al declarar una variable no necesitamos especificar el tipo de dato que vamos a almacenar en ella como si es necesario en otros lenguajes de programación </explicacion>
+    </leccion>
+    <leccion id = "2">
+      <titulo>Operadores Aritmeticos</titulo>
+      <codigo>
+      "+" Sumar 2 + 2	= 4
+      “-“ Restar	3 - 2	= 1
+      “*” Multiplicar	2 * 2	= 4
+      “/” Dividir	4 / 2	= 2
+      “%” Módulo: Devolverá el resto de la división	4 % 2	= 0
+      “**”  Exponente: Exponencial de un número	3**2	9
+      “//”  División devuelve el entero de la misma	8//4	2</codigo>
+      <explicacion>Los operadores aritméticos son aquellos que se utilizan para realizar operaciones matemáticas sencillas</explicacion>
+    </leccion>
+    <leccion id = "3">
+      <titulo>Operadores de comparacion</titulo>
+      <codigo>
+“==” Si dos valores son exactamente iguales!	2 == 2 True 2 == 3 False
+“!=” Si dos valores son diferentes devuelve True!	2 != 5	True 2 != 2 False
+“&gt;” Si el valor de la izquierda es mayor que el de la derecha devuelve True	4 &gt; 2 True 1 &gt; 2	 False
+“&lt;“ Si el valor de la izquierda es menor que el de la derecha devuelve True	1 &lt; 2 True 4 &lt; 2	 False
+        “&gt;=” Si el valor de la izquierda es mayor o igual que el de la derecha devuelve True	4 &gt;= 2 True 1 &gt;= 2 False 4 &gt;= 4	 True
+        "&lt;=" Si el valor de la izquierda es menor o igual que el de la derecha devuelve True	4 &lt;= 61 &lt;= 0 True 4 &lt;= 4	False
+
+True</codigo>
+      <explicacion>Los operadores de comparación son aquellos que se utilizan para comparar valores y nos devolverá True / False como resultado de la condición.</explicacion>
+    </leccion>
+    <leccion id = "4">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "5">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "6">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "7">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "8">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "9">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "10">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+  </etapa>
+
+  <etapa id="2">
+    <leccion id = "1">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "2">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "3">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "4">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "5">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "6">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "7">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "8">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "9">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "10">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+  </etapa>
+
+  <etapa id="3">
+    <leccion id = "1">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "2">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "3">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "4">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "5">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "6">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "7">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "8">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "9">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+    <leccion id = "10">
+      <titulo></titulo>
+      <codigo></codigo>
+      <explicacion></explicacion>
+    </leccion>
+
+  </etapa>
+</lecciones>

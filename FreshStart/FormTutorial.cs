@@ -31,6 +31,11 @@ namespace FreshStart
                 this.pictureBox.Image = imagenes[i];
                 this.labeITitulo.Left = (Height / 2);
             }
+            else
+            {
+                AbrirFormHijo(new FormLecciones());
+                this.panelLecciones.BringToFront();
+            }
         }
 
         private void FormTutorial_Load(object sender, EventArgs e)
@@ -52,6 +57,19 @@ namespace FreshStart
                 this.labeITitulo.Left = (Height / 2);
             }
             
+        }
+        private void AbrirFormHijo(object formhijo)
+        {
+            if (this.panelLecciones.Controls.Count > 0)
+            {
+                this.panelLecciones.Controls.RemoveAt(0);
+            }
+            Form hijo = formhijo as Form;
+            hijo.TopLevel = false;
+            hijo.Dock = DockStyle.Fill;
+            this.panelLecciones.Controls.Add(hijo);
+            this.panelLecciones.Tag = hijo;
+            hijo.Show();
         }
     }
 }

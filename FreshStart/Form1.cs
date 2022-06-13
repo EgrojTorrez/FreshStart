@@ -57,6 +57,30 @@ public partial class formInicio : Form
 
         private void botonSignOut_Click(object sender, EventArgs e)
         {
+            abrirFormCerrar(1);
+        }
+
+        private void abrirFormCerrar(int opc)
+        {
+            using (FormCerrar cerrar = new FormCerrar())
+            {
+                cerrar.modificarOpcion(opc);
+                cerrar.ShowDialog(this);
+                if (cerrar.DialogResult == DialogResult.OK)
+                {
+                    AbrirFormHijo(new FormUsuario());
+                }
+                
+            }
+        }
+
+        private void botonCalificaciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormEvaluaciones());
+        }
+
+        private void botonSignOut_Click(object sender, EventArgs e)
+        {
             if (UserCache.Login == true)
             {
                 abrirFormCerrar(1);

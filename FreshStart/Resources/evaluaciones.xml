@@ -85,21 +85,167 @@
 
   <etapa id="2">
     <pregunta id = "1">
-      <respuesta1></respuesta1>
-      <respuesta2></respuesta2>
-      <respuesta3></respuesta3>
-      <respuesta4></respuesta4>
-      <respuestacorrecta></respuestacorrecta>
+      <titulo>Son variables donde se almacenan diferentes tipos de datos estructurados que deben estar ordenados desde el comienzo.</titulo>
+      <respuesta1>Tuplas</respuesta1>
+      <respuesta2>Arreglos</respuesta2>
+      <respuesta3>Diccionario</respuesta3>
+      <respuesta4>Matriz</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "2">
+      <titulo>Son estructuras de datos utilizadas para mapear claves arbitrarias a valores.</titulo>
+      <respuesta1>Tuplas</respuesta1>
+      <respuesta2>Arreglos</respuesta2>
+      <respuesta3>Diccionario</respuesta3>
+      <respuesta4>Matriz</respuesta4>
+      <respuestacorrecta>4</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "3">
+      <titulo>Es un tipo de dato que solo puede tener dos estados</titulo>
+      <respuesta1>Entero</respuesta1>
+      <respuesta2>Booleano</respuesta2>
+      <respuesta3>String</respuesta3>
+      <respuesta4>Double</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "4">
+      <titulo>Es el nombre de la funcion que imprime en consola el valor de lo que se ingresa</titulo>
+      <respuesta1>print</respuesta1>
+      <respuesta2>println</respuesta2>
+      <respuesta3>WrileLine</respuesta3>
+      <respuesta4>Write</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "5">
+      <titulo>Es el operador que permite unir expresiones logicas de tal manera que ambas tienen que ser ciertas para que la expresion sea cierta</titulo>
+      <respuesta1>and</respuesta1>
+      <respuesta2>or</respuesta2>
+      <respuesta3>xor</respuesta3>
+      <respuesta4>xand</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "6">
+      <titulo>Es el operador que permite unir expresiones logicas de tal manera que solo una tiene que ser cierta para que la expresion sea cierta</titulo>
+      <respuesta1>and</respuesta1>
+      <respuesta2>or</respuesta2>
+      <respuesta3>xor</respuesta3>
+      <respuesta4>xand</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "7">
+      <titulo>Es un tipo de dato que se caracteriza por solo poder llevar numero sin decimal</titulo>
+      <respuesta1>Entero</respuesta1>
+      <respuesta2>Booleano</respuesta2>
+      <respuesta3>String</respuesta3>
+      <respuesta4>Double</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "8">
+      <titulo>Es el nombre del identificador de los diccionarios</titulo>
+      <respuesta1>Llave</respuesta1>
+      <respuesta2>Nombre</respuesta2>
+      <respuesta3>Indice</respuesta3>
+      <respuesta4>Ninguna</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "9">
+      <titulo>Es un tipo de dato numerico que contiene decimales y alberga el doble de espacio en memoria que un valor normal</titulo>
+      <respuesta1>Entero</respuesta1>
+      <respuesta2>Booleano</respuesta2>
+      <respuesta3>String</respuesta3>
+      <respuesta4>Double</respuesta4>
+      <respuestacorrecta>4</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "10">
+      <titulo>Son las funciones que permiten hacer un manejo de errores</titulo>
+      <respuesta1>try/catch</respuesta1>
+      <respuesta2>try/except</respuesta2>
+      <respuesta3>try/error</respuesta3>
+      <respuesta4>if/else</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
     </pregunta>
   </etapa>
 
   <etapa id="3">
     <pregunta id = "1">
-      <respuesta1></respuesta1>
-      <respuesta2></respuesta2>
-      <respuesta3></respuesta3>
-      <respuesta4></respuesta4>
-      <respuestacorrecta></respuestacorrecta>
+      <titulo>Libreria que ayuda a resolver operaciones matematicas, algebraicas y de matrices</titulo>
+      <respuesta1>Pandas</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>SymPy</respuesta3>
+      <respuesta4>Mates</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "2">
+      <titulo>Libreria que ayuda al analisis y manejo de datos</titulo>
+      <respuesta1>Pandas</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>SymPy</respuesta3>
+      <respuesta4>Mates</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "3">
+      <titulo>Libreria que ayuda al manejo y creacion de modelos estadisticos</titulo>
+      <respuesta1>Seaborn</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>SymPy</respuesta3>
+      <respuesta4>Scikit- learn</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "4">
+      <titulo>Libreria utilizada para el trabajo con machine learning e inteligencia artifical</titulo>
+      <respuesta1>Seaborn</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>Pytorch</respuesta3>
+      <respuesta4>Scikit- learn</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "5">
+      <titulo>Libreria usada para el uso de matematicas simbolicas o sistemas algebraicos computacionales</titulo>
+      <respuesta1>Seaborn</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>SymPy</respuesta3>
+      <respuesta4>Scikit- learn</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "6">
+      <titulo>Libreria usada para Machine Learning y análisis de datos como problemas de clasificacion y regresion</titulo>
+      <respuesta1>Seaborn</respuesta1>
+      <respuesta2>Numpy</respuesta2>
+      <respuesta3>SymPy</respuesta3>
+      <respuesta4>Scikit- learn</respuesta4>
+      <respuestacorrecta>4</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "7">
+      <titulo>Libreria usada para la implementacion de un algoritmo de aprendizaje HTML</titulo>
+      <respuesta1>NuPIC</respuesta1>
+      <respuesta2>Gensim</respuesta2>
+      <respuesta3>OpenCV</respuesta3>
+      <respuesta4>Theano</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "8">
+      <titulo>Libreria usada para el procesamiento de lenguaje neutral</titulo>
+      <respuesta1>NuPIC</respuesta1>
+      <respuesta2>Gensim</respuesta2>
+      <respuesta3>OpenCV</respuesta3>
+      <respuesta4>Theano</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "9">
+      <titulo>Libreria usada para el procesamiento de imágenes en Python</titulo>
+      <respuesta1>NuPIC</respuesta1>
+      <respuesta2>Gensim</respuesta2>
+      <respuesta3>OpenCV</respuesta3>
+      <respuesta4>Theano</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "10">
+      <titulo>Libreria usada para analizar, describir y optimizar declaraciones matematicas</titulo>
+      <respuesta1>NuPIC</respuesta1>
+      <respuesta2>Gensim</respuesta2>
+      <respuesta3>OpenCV</respuesta3>
+      <respuesta4>Theano</respuesta4>
+      <respuestacorrecta>4</respuestacorrecta>
     </pregunta>
 
   </etapa>
