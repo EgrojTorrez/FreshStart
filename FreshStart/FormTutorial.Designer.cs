@@ -33,6 +33,7 @@
             this.botonAtras = new System.Windows.Forms.PictureBox();
             this.botonSiguiente = new System.Windows.Forms.PictureBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.panelLecciones = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.botonAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botonSiguiente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
@@ -94,6 +95,13 @@
             this.pictureBox.TabIndex = 10;
             this.pictureBox.TabStop = false;
             // 
+            // panelLecciones
+            // 
+            this.panelLecciones.Location = new System.Drawing.Point(0, 0);
+            this.panelLecciones.Name = "panelLecciones";
+            this.panelLecciones.Size = new System.Drawing.Size(931, 548);
+            this.panelLecciones.TabIndex = 11;
+            // 
             // FormTutorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -105,6 +113,7 @@
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.labelInstrucciones);
             this.Controls.Add(this.labeITitulo);
+            this.Controls.Add(this.panelLecciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTutorial";
             this.Text = "FormTutorial";
@@ -124,5 +133,6 @@
         private PictureBox botonAtras;
         private PictureBox botonSiguiente;
         private PictureBox pictureBox;
+        private Panel panelLecciones;
     }
 }
