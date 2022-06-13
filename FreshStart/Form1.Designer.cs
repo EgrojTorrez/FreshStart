@@ -96,6 +96,7 @@
             this.botonLecciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonLecciones.TabIndex = 4;
             this.botonLecciones.TabStop = false;
+            this.botonLecciones.Click += new System.EventHandler(this.botonLecciones_Click);
             // 
             // botonUsers
             // 
@@ -108,6 +109,7 @@
             this.botonUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonUsers.TabIndex = 3;
             this.botonUsers.TabStop = false;
+            this.botonUsers.Click += new System.EventHandler(this.botonUsers_Click);
             // 
             // barraSuperior
             // 
@@ -168,7 +170,8 @@
             // 
             // formInicio
             // 
-            this.ClientSize = new System.Drawing.Size(1012, 600);
+            this.AllowDrop = true;
+            this.ClientSize = new System.Drawing.Size(1011, 604);
             this.Controls.Add(this.contenedorPrincipal);
             this.Controls.Add(this.barraSuperior);
             this.Controls.Add(this.barraLateral);
