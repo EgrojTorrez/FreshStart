@@ -2,6 +2,7 @@ namespace FreshStart;
 
 using System.Data.SQLite;
 using FreshStart.Cache;
+using FreshStart.Logica;
 public partial class formInicio : Form
 {
     public formInicio()
@@ -26,7 +27,7 @@ public partial class formInicio : Form
             abrirFormCerrar(2);
         }
 
-    private void AbrirFormHijo(object formhijo)
+   public void AbrirFormHijo(object formhijo)
     {
         if (this.contenedorPrincipal.Controls.Count > 0)
         {
@@ -40,7 +41,7 @@ public partial class formInicio : Form
         hijo.Show();
     }
 
-    private void botonUsers_Click(object sender, EventArgs e)
+    public void botonUsers_Click(object sender, EventArgs e)
     {
         if (UserCache.Login == true)
         {
@@ -56,7 +57,13 @@ public partial class formInicio : Form
 
         private void botonSignOut_Click(object sender, EventArgs e)
         {
-            abrirFormCerrar(1);
+            if (UserCache.Login == true)
+            {
+                abrirFormCerrar(1);
+
+            }
+            else
+                MessageBox.Show("No hay ninguna sesion iniciada");
         }
 
         private void abrirFormCerrar(int opc)
@@ -65,13 +72,41 @@ public partial class formInicio : Form
             {
                 cerrar.modificarOpcion(opc);
                 cerrar.ShowDialog();
-
+            if (cerrar.DialogResult == DialogResult.OK)
+            {
+                AbrirFormHijo(new FormInicioSesion());
+            }
             }
         }
 
         private void botonCalificaciones_Click(object sender, EventArgs e)
         {
+        if (UserCache.Login == true)
             AbrirFormHijo(new FormEvaluaciones());
+        else
+            MessageBox.Show("Ingrese a una cuenta antes de continuar");
         }
+
+    private void barraLateral_Paint(object sender, PaintEventArgs e)
+    {
+
+    }
+
+    private void contenedorPrincipal_Paint(object sender, PaintEventArgs e)
+    {
+
+    }
+
+    private void formInicio_Load_1(object sender, EventArgs e)
+    {
+        barraLateral.Height = Height;
+        barraSuperior.Width = Width;
+        botonCerrar.Left = (Width - (botonCerrar.Width + 25));
+        botonCalendario.Left = (Width - (botonCerrar.Width + botonCalendario.Width + 50));
+        botonSignOut.Top = (Height - (botonSignOut.Height + 50));
+        contenedorPrincipal.Width = Width - barraLateral.Width;
+        contenedorPrincipal.Height = Height - barraSuperior.Height;
+        UserCache.Login = false;
+        UsuarioLogica.Instancia.confirmacionlogin();
     }
 }

@@ -39,7 +39,7 @@ namespace FreshStart.Logica
             using (SQLiteConnection conexion = new SQLiteConnection(cadena))
             {
                 conexion.Open();
-                string query = "insert into DATOS(Nombres,APaterno,AMaterno,DNacimiento,MNacimiento,ANacimiento,Contraseña,Correo,Usuario) values (@nombre,@apaterno,@amaterno,@dnacimiento,@mnacimiento,@anacimiento,@contraseña,@correo,@usuario)";
+                string query = "insert into DATOS(Nombres,APaterno,AMaterno,DNacimiento,MNacimiento,ANacimiento,Contraseña,Correo,Usuario,Basica,Intermedia,Extra,Logged) values (@nombre,@apaterno,@amaterno,@dnacimiento,@mnacimiento,@anacimiento,@contraseña,@correo,@usuario,@basica,@intermedia,@extra,@logged)";
                 SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                 cmd.Parameters.Add(new SQLiteParameter("@nombre", obj.Nombres));
                 cmd.Parameters.Add(new SQLiteParameter("@apaterno", obj.APaterno));
@@ -50,6 +50,10 @@ namespace FreshStart.Logica
                 cmd.Parameters.Add(new SQLiteParameter("@contraseña", obj.Contraseña));
                 cmd.Parameters.Add(new SQLiteParameter("@correo", obj.Correo));
                 cmd.Parameters.Add(new SQLiteParameter("@usuario", obj.Usuario));
+                cmd.Parameters.Add(new SQLiteParameter("@basica", obj.Basica));
+                cmd.Parameters.Add(new SQLiteParameter("@intermedia", obj.Intermedia));
+                cmd.Parameters.Add(new SQLiteParameter("@extra", obj.Extra));
+                cmd.Parameters.Add(new SQLiteParameter("@logged", obj.Logged));
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 if (cmd.ExecuteNonQuery() < 1)
@@ -116,6 +120,78 @@ namespace FreshStart.Logica
                 
             }
             return resultado;
+        }
+        public void persistencia()
+        {
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+                string query = "UPDATE DATOS SET Logged=1 WHERE ID=" + UserCache.ID;
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public void confirmacionlogin()
+        {
+            SQLiteConnection conexionn = new SQLiteConnection(cadena);
+            conexionn.Open();
+            string queryy = "SELECT * from DATOS";
+            SQLiteCommand cmd = new SQLiteCommand(queryy, conexionn);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                string logeado = Convert.ToString(reader["Logged"]);
+                if (logeado=="1")
+                {
+                    UserCache.ID = Convert.ToInt32(reader["ID"]);
+                    UserCache.Nombres = Convert.ToString(reader["Nombres"]);
+                    UserCache.APaterno = Convert.ToString(reader["APaterno"]);
+                    UserCache.AMaterno = Convert.ToString(reader["AMaterno"]);
+                    UserCache.DNacimiento = Convert.ToString(reader["DNacimiento"]);
+                    UserCache.MNacimiento = Convert.ToString(reader["MNacimiento"]);
+                    UserCache.ANacimiento = Convert.ToString(reader["ANacimiento"]);
+                    UserCache.Contraseña = Convert.ToString(reader["Contraseña"]);
+                    UserCache.Correo = Convert.ToString(reader["Correo"]);
+                    UserCache.Usuario = Convert.ToString(reader["Usuario"]);
+                    UserCache.Login = true;
+                    UserCache.Basica = Convert.ToString(reader["Basica"]);
+                    UserCache.Intermedia = Convert.ToString(reader["Intermedia"]);
+                    UserCache.Extra = Convert.ToString(reader["Extra"]);
+                }
+            }
+        }
+        public void cerrar()
+        {
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+                string query = "UPDATE DATOS SET Logged=0 WHERE ID=" + UserCache.ID;
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+                cmd.ExecuteNonQuery();
+
+            }
+            
+        }
+        public void actualizarcalificacion(string etapa,int calificacion)
+        {
+            using (SQLiteConnection conexion = new SQLiteConnection(cadena))
+            {
+                conexion.Open();
+                string query = "UPDATE DATOS SET "+etapa+ "="+calificacion+ " WHERE ID=" + UserCache.ID;
+                SQLiteCommand cmd = new SQLiteCommand(query, conexion);
+                cmd.ExecuteNonQuery();
+                if (etapa == "Basica")
+                {
+                    UserCache.Basica = calificacion.ToString();
+                }else if (etapa == "Intermedia")
+                {
+                    UserCache.Intermedia=calificacion.ToString();
+                }
+                else
+                {
+                    UserCache.Extra = calificacion.ToString();
+                }
+            }
         }
     }
 }

@@ -21,6 +21,8 @@ public class PrecargaDB
     public string Basica { get; set; }
     public string Intermedia { get; set; }
     public string Extra { get; set; }
+    public string Logged { get; set; }
+
 
 
 }

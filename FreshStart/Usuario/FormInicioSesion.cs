@@ -64,10 +64,11 @@ namespace FreshStart
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            bool respuesta = UsuarioLogica.Instancia.Comparacion(textBoxUsuario.Text, textBoxPassword.Text);
+            bool respuesta = UsuarioLogica.Instancia.Comparacion(textBoxUsuario.Text.ToUpper(), textBoxPassword.Text);
             if (respuesta == true)
             {
                 MessageBox.Show("Bienvenido " + UserCache.Nombres);
+                UsuarioLogica.Instancia.persistencia();
                 this.Close();
 
             }

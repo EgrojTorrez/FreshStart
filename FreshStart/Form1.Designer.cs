@@ -60,6 +60,7 @@
             this.barraLateral.Name = "barraLateral";
             this.barraLateral.Size = new System.Drawing.Size(82, 608);
             this.barraLateral.TabIndex = 0;
+            this.barraLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.barraLateral_Paint);
             // 
             // botonSignOut
             // 
@@ -178,6 +179,7 @@
             this.Controls.Add(this.barraSuperior);
             this.Controls.Add(this.barraLateral);
             this.Name = "formInicio";
+            this.Load += new System.EventHandler(this.formInicio_Load_1);
             this.Resize += new System.EventHandler(this.formInicio_Load);
             this.barraLateral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.botonSignOut)).EndInit();

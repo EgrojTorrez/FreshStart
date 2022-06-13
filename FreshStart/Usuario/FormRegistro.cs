@@ -37,16 +37,18 @@ namespace FreshStart
                     ANacimiento = fecha_split[2],
                     Correo = textBoxCorreo.Text,
                     Contraseña = textBoxPassword.Text,
-                    Usuario = textBoxUsuario.Text,
-                    Basica = Convert.ToString(0),
-                    Intermedia = Convert.ToString(0),
-                    Extra = Convert.ToString(0)
+                    Usuario = textBoxUsuario.Text.ToUpper(),
+                    Basica = "0",
+                    Intermedia = "0",
+                    Extra = "0",
+                    Logged="0"
 
                 };
                 bool respuesta = UsuarioLogica.Instancia.Guardar(objeto);
                 if (respuesta == true)
                 {
                     MessageBox.Show("Registro exitoso");
+                    this.Close();
                     
                 }
                 else
@@ -57,13 +59,13 @@ namespace FreshStart
             else
             {
                 if ((textBoxUsuario.Text != "") || textBoxCorreo.Text != "") {
-                    if (UsuarioLogica.Instancia.unicos(textBoxUsuario.Text, textBoxCorreo.Text) == false)
+                    if (UsuarioLogica.Instancia.unicos(textBoxUsuario.Text, textBoxCorreo.Text) == true)
                     {
                         MessageBox.Show("Usuario o Correo ya usados, ingrese otros datos o intente iniciar sesion");
                     }
                     else
                     {
-                        MessageBox.Show("Ingrese datos validos!!");
+                        MessageBox.Show("Ingrese datos validos!");
                     }
                 }
                 else

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FreshStart.Cache;
+using FreshStart.Logica;
 
 namespace FreshStart
 {
@@ -47,7 +49,9 @@ namespace FreshStart
         {
             if (opcion == 1)
             {
-
+                UserCache.Login = false;
+                UsuarioLogica.Instancia.cerrar();
+                this.DialogResult = DialogResult.OK;
             }
             else if (opcion == 2)
             {
