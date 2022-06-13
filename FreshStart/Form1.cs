@@ -20,7 +20,7 @@ namespace FreshStart
 
         private void botonCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            abrirFormCerrar(2);
         }
 
         private void AbrirFormHijo(object formhijo)
@@ -49,12 +49,22 @@ namespace FreshStart
 
         private void botonSignOut_Click(object sender, EventArgs e)
         {
+            abrirFormCerrar(1);
+        }
+
+        private void abrirFormCerrar(int opc)
+        {
             using (FormCerrar cerrar = new FormCerrar())
             {
-                cerrar.modificarOpcion(1);
+                cerrar.modificarOpcion(opc);
                 cerrar.ShowDialog();
 
             }
+        }
+
+        private void botonCalificaciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormEvaluaciones());
         }
     }
 }

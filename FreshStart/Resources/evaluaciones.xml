@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluaciones>
+  <etapa id="1">
+    <pregunta id = "1">
+      <titulo>Que tipo de operador es este: +</titulo>
+      <respuesta1>Operador Logico</respuesta1>
+      <respuesta2>Operador de comparacion</respuesta2>
+      <respuesta3>Operador aritmetico</respuesta3>
+      <respuesta4>Operador especial</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "2">
+      <titulo>Que tipo de operador es este: ></titulo>
+      <respuesta1>Operador Logico</respuesta1>
+      <respuesta2>Operador de comparacion</respuesta2>
+      <respuesta3>Operador aritmetico</respuesta3>
+      <respuesta4>Operador especial</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "3">
+      <titulo>Que tipo de operador es este: and</titulo>
+      <respuesta1>Operador Logico</respuesta1>
+      <respuesta2>Operador de comparacion</respuesta2>
+      <respuesta3>Operador aritmetico</respuesta3>
+      <respuesta4>Operador especial</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "4">
+      <titulo>Es una estructura condicional la cual compara si una expresion es verdadera y la ejecuta en este caso</titulo>
+      <respuesta1>If</respuesta1>
+      <respuesta2>While</respuesta2>
+      <respuesta3>For</respuesta3>
+      <respuesta4>DoWhile</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "5">
+      <titulo>Es una estructura condicional la cual se repite hasta llegar al valor preestablecido</titulo>
+      <respuesta1>If</respuesta1>
+      <respuesta2>While</respuesta2>
+      <respuesta3>For</respuesta3>
+      <respuesta4>DoWhile</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "6">
+      <titulo>Es una estructura condicional la cual compara una expresion y la repite hasta que deje de ser verdadero</titulo>
+      <respuesta1>If</respuesta1>
+      <respuesta2>While</respuesta2>
+      <respuesta3>For</respuesta3>
+      <respuesta4>DoWhile</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "7">
+      <titulo>Es una estructura condicional en la cual se ejecuta el codigo 1 vez para luego comparar una expresion y repetir el codigo mientras sea verdadera</titulo>
+      <respuesta1>If</respuesta1>
+      <respuesta2>While</respuesta2>
+      <respuesta3>For</respuesta3>
+      <respuesta4>DoWhile</respuesta4>
+      <respuestacorrecta>4</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "8">
+      <titulo>Es un bloque de codigo que se manda a llamar para ejecutarse y devolver un valor</titulo>
+      <respuesta1>Funcion</respuesta1>
+      <respuesta2>Arreglo</respuesta2>
+      <respuesta3>Matriz</respuesta3>
+      <respuesta4>Ninguna</respuesta4>
+      <respuestacorrecta>1</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "9">
+      <titulo>Es una coleccion ordenada de datos que contiene un indice numerico para poder acceder a los respectivos valores</titulo>
+      <respuesta1>Funcion</respuesta1>
+      <respuesta2>Arreglo</respuesta2>
+      <respuesta3>Matriz</respuesta3>
+      <respuesta4>Diccionario</respuesta4>
+      <respuestacorrecta>2</respuestacorrecta>
+    </pregunta>
+    <pregunta id = "10">
+      <titulo>Es una coleccion ordenada de datos que contiene dos indices numerico para poder acceder a los respectivos valores</titulo>
+      <respuesta1>Funcion</respuesta1>
+      <respuesta2>Arreglo</respuesta2>
+      <respuesta3>Matriz</respuesta3>
+      <respuesta4>Diccionario</respuesta4>
+      <respuestacorrecta>3</respuestacorrecta>
+    </pregunta>
+  </etapa>
+
+  <etapa id="2">
+    <pregunta id = "1">
+      <respuesta1></respuesta1>
+      <respuesta2></respuesta2>
+      <respuesta3></respuesta3>
+      <respuesta4></respuesta4>
+      <respuestacorrecta></respuestacorrecta>
+    </pregunta>
+  </etapa>
+
+  <etapa id="3">
+    <pregunta id = "1">
+      <respuesta1></respuesta1>
+      <respuesta2></respuesta2>
+      <respuesta3></respuesta3>
+      <respuesta4></respuesta4>
+      <respuestacorrecta></respuestacorrecta>
+    </pregunta>
+
+  </etapa>
+</evaluaciones>
