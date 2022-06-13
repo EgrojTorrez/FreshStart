@@ -60,6 +60,7 @@
             this.barraLateral.Name = "barraLateral";
             this.barraLateral.Size = new System.Drawing.Size(82, 608);
             this.barraLateral.TabIndex = 0;
+            this.barraLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.barraLateral_Paint);
             // 
             // botonSignOut
             // 
@@ -168,6 +169,7 @@
             this.contenedorPrincipal.Name = "contenedorPrincipal";
             this.contenedorPrincipal.Size = new System.Drawing.Size(929, 546);
             this.contenedorPrincipal.TabIndex = 2;
+            this.contenedorPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedorPrincipal_Paint);
             // 
             // formInicio
             // 
@@ -177,6 +179,7 @@
             this.Controls.Add(this.barraSuperior);
             this.Controls.Add(this.barraLateral);
             this.Name = "formInicio";
+            this.Load += new System.EventHandler(this.formInicio_Load_1);
             this.Resize += new System.EventHandler(this.formInicio_Load);
             this.barraLateral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.botonSignOut)).EndInit();
@@ -203,5 +206,7 @@
         private PictureBox botonAtras;
         private PictureBox botonCalendario;
         private Panel contenedorPrincipal;
+
+        
     }
 }

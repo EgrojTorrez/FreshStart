@@ -56,11 +56,13 @@
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "ENTRAR";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(110, 348);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(247, 23);
             this.textBoxPassword.TabIndex = 4;
             // 

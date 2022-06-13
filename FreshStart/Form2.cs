@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FreshStart
 {
-    public partial class FormUsuario : Form
+    public partial class Form2 : Form
     {
-        public FormUsuario()
+        public Form2()
         {
             InitializeComponent();
         }

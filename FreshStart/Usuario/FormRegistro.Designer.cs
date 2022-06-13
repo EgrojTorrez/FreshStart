@@ -54,7 +54,7 @@
             this.textBoxUsuario.Location = new System.Drawing.Point(90, 71);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(247, 23);
-            this.textBoxUsuario.TabIndex = 5;
+            this.textBoxUsuario.TabIndex = 1;
             // 
             // labelUsuario
             // 
@@ -70,8 +70,9 @@
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(90, 181);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(247, 23);
-            this.textBoxPassword.TabIndex = 7;
+            this.textBoxPassword.TabIndex = 2;
             // 
             // labelPassword
             // 
@@ -88,7 +89,7 @@
             this.textBoxCorreo.Location = new System.Drawing.Point(90, 405);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(247, 23);
-            this.textBoxCorreo.TabIndex = 11;
+            this.textBoxCorreo.TabIndex = 4;
             // 
             // labelCorreo
             // 
@@ -104,8 +105,9 @@
             // 
             this.textBoxPasswordConfirm.Location = new System.Drawing.Point(90, 295);
             this.textBoxPasswordConfirm.Name = "textBoxPasswordConfirm";
+            this.textBoxPasswordConfirm.PasswordChar = '*';
             this.textBoxPasswordConfirm.Size = new System.Drawing.Size(247, 23);
-            this.textBoxPasswordConfirm.TabIndex = 9;
+            this.textBoxPasswordConfirm.TabIndex = 3;
             // 
             // labelPasswordConfirmation
             // 
@@ -132,7 +134,7 @@
             this.textBoxApellidoMaterno.Location = new System.Drawing.Point(580, 295);
             this.textBoxApellidoMaterno.Name = "textBoxApellidoMaterno";
             this.textBoxApellidoMaterno.Size = new System.Drawing.Size(247, 23);
-            this.textBoxApellidoMaterno.TabIndex = 17;
+            this.textBoxApellidoMaterno.TabIndex = 8;
             // 
             // labelApellidoMaterno
             // 
@@ -149,7 +151,7 @@
             this.textBoxApellidoPaterno.Location = new System.Drawing.Point(580, 181);
             this.textBoxApellidoPaterno.Name = "textBoxApellidoPaterno";
             this.textBoxApellidoPaterno.Size = new System.Drawing.Size(247, 23);
-            this.textBoxApellidoPaterno.TabIndex = 15;
+            this.textBoxApellidoPaterno.TabIndex = 7;
             // 
             // labelApellidoPaterno
             // 
@@ -166,7 +168,7 @@
             this.textBoxNombres.Location = new System.Drawing.Point(580, 71);
             this.textBoxNombres.Name = "textBoxNombres";
             this.textBoxNombres.Size = new System.Drawing.Size(247, 23);
-            this.textBoxNombres.TabIndex = 13;
+            this.textBoxNombres.TabIndex = 6;
             // 
             // labelNombre
             // 
@@ -183,7 +185,7 @@
             this.textBoxCorreoConfirm.Location = new System.Drawing.Point(90, 503);
             this.textBoxCorreoConfirm.Name = "textBoxCorreoConfirm";
             this.textBoxCorreoConfirm.Size = new System.Drawing.Size(247, 23);
-            this.textBoxCorreoConfirm.TabIndex = 21;
+            this.textBoxCorreoConfirm.TabIndex = 5;
             // 
             // labelCorreoConfirmacion
             // 
@@ -205,16 +207,17 @@
             this.buttonRegistrarse.Location = new System.Drawing.Point(580, 479);
             this.buttonRegistrarse.Name = "buttonRegistrarse";
             this.buttonRegistrarse.Size = new System.Drawing.Size(247, 47);
-            this.buttonRegistrarse.TabIndex = 22;
+            this.buttonRegistrarse.TabIndex = 10;
             this.buttonRegistrarse.Text = "INSCRIBETE";
             this.buttonRegistrarse.UseVisualStyleBackColor = false;
+            this.buttonRegistrarse.Click += new System.EventHandler(this.buttonRegistrarse_Click);
             // 
             // fechaNacimiento
             // 
             this.fechaNacimiento.Location = new System.Drawing.Point(580, 405);
             this.fechaNacimiento.Name = "fechaNacimiento";
             this.fechaNacimiento.Size = new System.Drawing.Size(247, 23);
-            this.fechaNacimiento.TabIndex = 23;
+            this.fechaNacimiento.TabIndex = 9;
             // 
             // FormRegistro
             // 

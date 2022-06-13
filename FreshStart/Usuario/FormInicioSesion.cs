@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FreshStart.Logica;
+using FreshStart.Modelo;
+using FreshStart.Cache;
+using FreshStart;
 
 namespace FreshStart
 {
@@ -56,6 +60,22 @@ namespace FreshStart
             this.buttonCerrar.SendToBack();
             this.panelRegistro.BringToFront();
             
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            bool respuesta = UsuarioLogica.Instancia.Comparacion(textBoxUsuario.Text.ToUpper(), textBoxPassword.Text);
+            if (respuesta == true)
+            {
+                MessageBox.Show("Bienvenido " + UserCache.Nombres);
+                UsuarioLogica.Instancia.persistencia();
+                this.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o contraseño incorrectos, intentelo de nuevo!");
+            }
         }
     }
 

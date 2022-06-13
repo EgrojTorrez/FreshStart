@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.labeINombre = new System.Windows.Forms.Label();
-            this.labelEdad = new System.Windows.Forms.Label();
+            this.labelNacimiento = new System.Windows.Forms.Label();
             this.labelCorreo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelPorcentajeEtapaBasica = new System.Windows.Forms.Label();
@@ -55,15 +55,15 @@
             this.labeINombre.TabIndex = 2;
             this.labeINombre.Text = "Christopher Edwin Molina Hutchings Von Ludwitz";
             // 
-            // labelEdad
+            // labelNacimiento
             // 
-            this.labelEdad.AutoSize = true;
-            this.labelEdad.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelEdad.Location = new System.Drawing.Point(744, 9);
-            this.labelEdad.Name = "labelEdad";
-            this.labelEdad.Size = new System.Drawing.Size(109, 45);
-            this.labelEdad.TabIndex = 3;
-            this.labelEdad.Text = "18 años";
+            this.labelNacimiento.AutoSize = true;
+            this.labelNacimiento.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNacimiento.Location = new System.Drawing.Point(744, 9);
+            this.labelNacimiento.Name = "labelNacimiento";
+            this.labelNacimiento.Size = new System.Drawing.Size(132, 45);
+            this.labelNacimiento.TabIndex = 3;
+            this.labelNacimiento.Text = "11/11/2011";
             // 
             // labelCorreo
             // 
@@ -205,11 +205,12 @@
             this.Controls.Add(this.labelPorcentajeEtapaBasica);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelCorreo);
-            this.Controls.Add(this.labelEdad);
+            this.Controls.Add(this.labelNacimiento);
             this.Controls.Add(this.labeINombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
+            this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +219,7 @@
         #endregion
 
         private Label labeINombre;
-        private Label labelEdad;
+        private Label labelNacimiento;
         private Label labelCorreo;
         private Label label1;
         private Label labelPorcentajeEtapaBasica;

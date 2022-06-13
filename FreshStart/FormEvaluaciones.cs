@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.IO;
 using System.Reflection;
+using FreshStart.Logica;
 
 namespace FreshStart
 {
@@ -112,6 +113,11 @@ namespace FreshStart
                 this.button2.Visible = false;
                 this.button3.Visible = false;
                 this.button4.Visible = false;
+                if (calificacion < 10)
+                {
+                    MessageBox.Show("Intentelo nuevamente");
+                }
+                UsuarioLogica.Instancia.actualizarcalificacion("Basica",calificacion);
             }
             
         }
