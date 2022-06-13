@@ -21,10 +21,10 @@ public partial class formInicio : Form
 
     }
 
-    private void botonCerrar_Click(object sender, EventArgs e)
-    {
-        this.Close();
-    }
+        private void botonCerrar_Click(object sender, EventArgs e)
+        {
+            abrirFormCerrar(2);
+        }
 
     private void AbrirFormHijo(object formhijo)
     {
@@ -49,13 +49,29 @@ public partial class formInicio : Form
         AbrirFormHijo(new FormInicioSesion());
     }
 
-    private void botonLecciones_Click(object sender, EventArgs e)
-    {
-        AbrirFormHijo(new FormTutorial());
-    }
+        private void botonLecciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormTutorial());
+        }
 
-    private void contenedorPrincipal_Paint(object sender, PaintEventArgs e)
-    {
+        private void botonSignOut_Click(object sender, EventArgs e)
+        {
+            abrirFormCerrar(1);
+        }
 
+        private void abrirFormCerrar(int opc)
+        {
+            using (FormCerrar cerrar = new FormCerrar())
+            {
+                cerrar.modificarOpcion(opc);
+                cerrar.ShowDialog();
+
+            }
+        }
+
+        private void botonCalificaciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new FormEvaluaciones());
+        }
     }
 }

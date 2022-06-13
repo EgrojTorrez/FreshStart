@@ -72,6 +72,7 @@
             this.botonSignOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonSignOut.TabIndex = 6;
             this.botonSignOut.TabStop = false;
+            this.botonSignOut.Click += new System.EventHandler(this.botonSignOut_Click);
             // 
             // botonCalificaciones
             // 
@@ -84,6 +85,7 @@
             this.botonCalificaciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botonCalificaciones.TabIndex = 5;
             this.botonCalificaciones.TabStop = false;
+            this.botonCalificaciones.Click += new System.EventHandler(this.botonCalificaciones_Click);
             // 
             // botonLecciones
             // 
@@ -202,5 +204,7 @@
         private PictureBox botonAtras;
         private PictureBox botonCalendario;
         private Panel contenedorPrincipal;
+
+        
     }
 }

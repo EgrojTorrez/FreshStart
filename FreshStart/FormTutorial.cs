@@ -15,7 +15,7 @@ namespace FreshStart
         int i = 0;
         string[] titulo = new string[] {"1. Ir a la pagina de descargas","2. Escuentra la version", "3. Descarga python", "4. Instalar python", "5. Espera", "6. FIN"};
         string[] instrucciones = new string[] { "Ingresar a la pagina https://www.python.org/ y acceder al apartado de descargas", "Escoge la version mas reciente del programa ", "Escoge la version de python dependiendo del sitema operativo usado", "Abre el archivo descargado y selecciona Install Now", "Espera a que se complete la instalacion", "Listo ya tienes la version mas reciente de python en tu sistema"};
-        Image[] imagenes = new Image[] {FreshStart.Properties.Resources.TutorilPython1, FreshStart.Properties.Resources.TutorilPython2, FreshStart.Properties.Resources.TutorilPython3, FreshStart.Properties.Resources.TutorialPython4, FreshStart.Properties.Resources.TutorialPython5, FreshStart.Properties.Resources.TutorialPython6 };
+        Image[] imagenes = new Image[] {FreshStart.Properties.Resources.TutorilPython1, FreshStart.Properties.Resources.TutorilPython2, FreshStart.Properties.Resources.TutorilPython3, FreshStart.Properties.Resources.TutorialPython5, FreshStart.Properties.Resources.TutorialPython4, FreshStart.Properties.Resources.TutorialPython6 };
     public FormTutorial()
         {
             InitializeComponent();

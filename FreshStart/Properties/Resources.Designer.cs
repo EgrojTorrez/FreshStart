@@ -113,10 +113,55 @@ namespace FreshStart.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrarPopUp {
+            get {
+                object obj = ResourceManager.GetObject("cerrarPopUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkPopUp {
+            get {
+                object obj = ResourceManager.GetObject("checkPopUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross_circle_free_icon_font {
             get {
                 object obj = ResourceManager.GetObject("cross-circle-free-icon-font", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;evaluaciones&gt;
+        ///  &lt;etapa id=&quot;1&quot;&gt;
+        ///    &lt;pregunta id = &quot;1&quot;&gt;
+        ///      &lt;titulo&gt;Este es el titulo&lt;/titulo&gt;
+        ///      &lt;respuesta1&gt;respuesta numero 1&lt;/respuesta1&gt;
+        ///      &lt;respuesta2&gt;respuesta numero 1&lt;/respuesta2&gt;
+        ///      &lt;respuesta3&gt;respuesta numero 1&lt;/respuesta3&gt;
+        ///      &lt;respuesta4&gt;respuesta numero 1&lt;/respuesta4&gt;
+        ///      &lt;respuestacorrecta&gt;2&lt;/respuestacorrecta&gt;
+        ///    &lt;/pregunta&gt; 
+        ///  &lt;/etapa&gt;
+        ///
+        ///  &lt;etapa id=&quot;2&quot;&gt;
+        ///      &lt;pregunta id = &quot;1&quot;&gt;
+        ///      &lt;respuesta1&gt;&lt;/respuesta1&gt;
+        ///      &lt;re [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string evaluaciones {
+            get {
+                return ResourceManager.GetString("evaluaciones", resourceCulture);
             }
         }
         
