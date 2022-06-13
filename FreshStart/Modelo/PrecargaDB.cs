@@ -12,11 +12,15 @@ public class PrecargaDB
     public string Nombres { get; set; }
     public string APaterno { get; set; }
     public string AMaterno { get; set; }
-    public int DNacimiento { get; set; }
-    public int MNacimiento { get; set; }
-    public int ANacimiento { get; set; }
+    public string DNacimiento { get; set; }
+    public string MNacimiento { get; set; }
+    public string ANacimiento { get; set; }
     public string Contraseña { get; set; }
     public string Correo { get; set; }
     public string Usuario { get; set; }
+    public string Basica { get; set; }
+    public string Intermedia { get; set; }
+    public string Extra { get; set; }
+
 
 }

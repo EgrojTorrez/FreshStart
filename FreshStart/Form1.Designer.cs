@@ -202,5 +202,7 @@
         private PictureBox botonAtras;
         private PictureBox botonCalendario;
         private Panel contenedorPrincipal;
+
+        
     }
 }
