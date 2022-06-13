@@ -247,6 +247,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormRegistro";
             this.Text = "FormRegistro";
+            this.Load += new System.EventHandler(this.FormRegistro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

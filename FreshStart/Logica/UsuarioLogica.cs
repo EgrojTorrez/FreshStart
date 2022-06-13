@@ -9,7 +9,7 @@ using System.Data.SQLite;
 using FreshStart.Cache;
 namespace FreshStart.Logica
 {
-    public class UsuarioLogica
+    public class UsuarioLogica : Logica_Abstracta
     {
         private static string cadena = ConfigurationManager.ConnectionStrings["Cadena"].ConnectionString;
 

@@ -11,6 +11,7 @@ using System.Xml;
 using System.IO;
 using System.Reflection;
 using FreshStart.Logica;
+using FreshStart.Cache;
 
 namespace FreshStart
 {
@@ -43,11 +44,19 @@ namespace FreshStart
         private void datosXML()
         {
             int i = 0;
+            int opcion = 0;
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resources\evaluaciones.xml");
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(@"..\..\..\Resources\evaluaciones.xml"); 
-
-            foreach (XmlNode xmlNode in xmlDoc.DocumentElement.ChildNodes[2].ChildNodes)
+            xmlDoc.Load(@"..\..\..\Resources\evaluaciones.xml");
+            if (UserCache.Basica != "10")
+            {
+                opcion = 0;
+            }else if(UserCache.Intermedia!= "10")
+            {
+                opcion = 1;
+            }
+            else { opcion = 2; }
+            foreach (XmlNode xmlNode in xmlDoc.DocumentElement.ChildNodes[opcion].ChildNodes)
             {
 
                 foreach (XmlNode xmlNodeItem in xmlNode.ChildNodes)
@@ -117,7 +126,20 @@ namespace FreshStart
                 {
                     MessageBox.Show("Intentelo nuevamente");
                 }
-                UsuarioLogica.Instancia.actualizarcalificacion("Basica",calificacion);
+                else
+                {
+                    MessageBox.Show("Excelente, has pasado la evaluacion!");
+                }
+                if (UserCache.Basica != "10")
+                {
+                    UsuarioLogica.Instancia.actualizarcalificacion("Basica", calificacion);
+                }
+                else if (UserCache.Intermedia != "10")
+                {
+                    UsuarioLogica.Instancia.actualizarcalificacion("Intermedia", calificacion);
+                }
+                else { UsuarioLogica.Instancia.actualizarcalificacion("Extra", calificacion); }
+                
             }
             
         }
